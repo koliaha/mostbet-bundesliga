@@ -1,0 +1,482 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+input:focus {
+  outline: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+body {
+  background-color: #1667c1;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Roboto";
+  line-height: 1.2;
+  background-image: url("../img/bg.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
+  min-height: 775px;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: block;
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.sec1 {
+  min-height: 775px;
+}
+
+.sec1 .coins {
+  background-image: url("../img/bgcoins1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 775px;
+}
+
+.sec1 .content {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec1 .content .main-logo {
+  width: 242px;
+}
+
+.sec1 .content .head-title {
+  margin: 60px 0 5px;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+}
+
+.sec1 .content .head-subtitle {
+  font-size: 32px;
+  font-weight: 900;
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+}
+
+.sec1 .content .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 215px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec1 .content .main-content .center-img {
+  width: 170px;
+}
+
+.sec1 .content .main-content .center-img img {
+  width: 100%;
+}
+
+.sec1 .content .main-content .left-side {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 237px;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+.sec1 .content .main-content .left-side .first:after {
+  content: url("../img/clipboard.svg");
+  position: absolute;
+  right: -70px;
+  top: 20px;
+}
+
+.sec1 .content .main-content .left-side .second:after {
+  content: url("../img/entertainment.svg");
+  position: absolute;
+  right: -78px;
+  bottom: 30px;
+}
+
+.sec1 .content .main-content .right-side {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 237px;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+.sec1 .content .main-content .right-side .first::before {
+  content: url("../img/sport.svg");
+  position: absolute;
+  left: -75px;
+  top: 30px;
+}
+
+.sec1 .content .main-content .right-side .second::before {
+  content: url("../img/tax.svg");
+  position: absolute;
+  left: -75px;
+  bottom: 30px;
+}
+
+.sec1 .content .regist-btn {
+  font-size: 22px;
+  margin-top: 93px;
+  cursor: pointer;
+  color: #fff;
+  padding: 25px 0;
+  font-weight: thin;
+  text-transform: uppercase;
+  background-color: #fa5a00;
+  border: none;
+  border-radius: 50px;
+  background-image: -ms-linear-gradient(90deg, #fa4d00 0%, #fa5e00 100%);
+  -webkit-box-shadow: 0px 11px 27px 0px rgba(250, 65, 0, 0.63);
+          box-shadow: 0px 11px 27px 0px rgba(250, 65, 0, 0.63);
+  width: 380px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.sec1 .content .regist-btn span {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sec1 .content .regist-btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sec1 .content .regist-btn:hover span {
+  padding-right: 25px;
+}
+
+.sec1 .content .regist-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.sec2 {
+  height: 775px;
+}
+
+.sec2 .coins {
+  background-image: url("../img/bgcoins2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 775px;
+}
+
+.sec2 .wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sec2 .wrapper .content {
+  padding-top: 25px;
+}
+
+.sec2 .wrapper .flag {
+  position: relative;
+}
+
+.sec2 .wrapper .flag::before {
+  content: url("../img/flag.png");
+  position: absolute;
+  height: 110px;
+  width: 160px;
+  left: calc(-18% - 20px);
+}
+
+.sec2 .wrapper .main-logo {
+  height: 30px;
+}
+
+.sec2 .wrapper .head-title {
+  margin: 60px 0 5px;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+  line-height: 64px;
+}
+
+.sec2 .wrapper .head-subtitle {
+  font-size: 32px;
+  font-weight: 900;
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+  line-height: 32px;
+}
+
+.sec2 .wrapper .main-content-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 60px;
+}
+
+.sec2 .wrapper .main-content-list .main-content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.sec2 .wrapper .main-content-list .main-content-item .main-content-text {
+  margin-left: 42px;
+  font-size: 18px;
+  font-family: "Roboto";
+  line-height: 1.2;
+  position: relative;
+}
+
+.sec2 .wrapper .main-content-list .main-content-item .main-content-text::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 17px;
+  background-color: #ffba00;
+  left: -20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sec2 .wrapper .league-logo {
+  position: absolute;
+  padding: 26px 20px 26px 60px;
+  bottom: 0;
+}
+
+.sec2 .wrapper .league-logo .bundes {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  position: relative;
+}
+
+.sec2 .wrapper .league-logo .bundes::before {
+  content: url("../img/bunlogo.svg");
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sec2 .wrapper .form-registration {
+  max-width: 341px;
+  position: absolute;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  color: #000;
+  bottom: 0;
+  right: 0;
+  min-height: 480px;
+  background-color: #fff;
+}
+
+.sec2 .wrapper .form-registration .form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .form-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .form-tabs::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 341px;
+  bottom: -15px;
+  background-color: #e8ecf1;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .form-tabs .email-tab {
+  width: 90px;
+  text-align: center;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .form-tabs .phone-tap {
+  color: #6b7d8e;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .main-form {
+  margin-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .main-form .order-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .main-form .order-form .form-input {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 2px solid #cbd4df;
+  min-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .main-form .order-form .form-btn {
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  padding: 25px 0;
+  font-weight: thin;
+  text-transform: uppercase;
+  background-color: #fa5a00;
+  border: none;
+  border-radius: 50px;
+  background-image: -ms-linear-gradient(90deg, #fa4d00 0%, #fa5e00 100%);
+  -webkit-box-shadow: 0px 11px 27px 0px rgba(250, 65, 0, 0.63);
+          box-shadow: 0px 11px 27px 0px rgba(250, 65, 0, 0.63);
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .main-form .singin {
+  text-align: center;
+  font-size: 16px;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .main-form .singin a {
+  color: #ffba00;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .age-submit {
+  background-color: #dde4ec;
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .age-submit a {
+  color: #2ea9ff;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .socia {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .socia .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 15px 0;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .socia .social-list a {
+  width: 33px;
+  height: 33px;
+  background-color: #e8ecf1;
+  border-radius: 50%;
+  line-height: 33px;
+}
+/*# sourceMappingURL=style.css.map */
