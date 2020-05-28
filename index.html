@@ -7,6 +7,7 @@
     <title>Mostbet</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="./js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -73,18 +74,36 @@
                         <div class="form-wrap">
                             
                             <div class="form-tabs">
-                                <div class="wrapper">
-                                    <div class="email-tab active">По email</div>
-                                    <div class="phone-tap">По номеру телефона</div>
+                                <div class="wrapper tablist">
+                                    <div class="email-tab tabitem active">По email</div>
+                                    <div class="phone-tab tabitem">По номеру телефона</div>
                                 </div>
                             </div>
                             <div class="main-form">
                                 <div class="wrapper">
                                 <form action="" class="order-form" method="POST">
-                                    <input type="text" class="form-input" name="mail" placeholder="E-mail">
-                                    <input type="tel" class="form-input" placeholder="Телефон" name="phone">
-                                    <input type="text" class="form-input" placeholder="Ф.И.О" name="name" >
-                                    <input type="password" class="form-input" placeholder="Пароль">
+                                    <div class="input-icon tab-content active">
+                                        <input type="text" class="form-input  mail" name="mail" placeholder="E-mail">
+                                        <img src="./img/mail.svg" class="ico" alt="">
+                                    </div>
+                                    <div class="input-icon tab-content">
+                                        <input type="tel" class="form-input phone" placeholder="Телефон" name="phone">
+                                        <img src="./img/mail.svg" class="ico" alt="">
+                                    </div>
+                                    <div class="input-icon">
+                                        <select name="" id="" class="form-input"   >
+                                            <option value="123">Рубль</option>
+                                            <option value="123">Донг</option>
+                                            <option value="123">Евро</option>
+                                            <option value="123">Доллар</option>
+                                        </select>
+                                        <div class="select-arrow"></div>
+                                        <img src="./img/name.svg" class="ico" alt="">
+                                    </div>
+                                    <div class="input-icon">
+                                        <input type="password" class="form-input" placeholder="Пароль">
+                                        <img src="./img/pass.svg" class="ico" alt="">
+                                    </div>
                                     <button class="form-btn" type="submit">регистрация</button>
                                 </form>
                                 <p class="singin">
@@ -96,8 +115,9 @@
                             <div class="age-submit">
                                 <div class="wrapper">
                                 <label>
-                                    <input type="checkbox" name="happy" value="yes">Я подтверждаю своё совершеннолетие
-                                    и соглашаюсь с <a href="">правилами сайта</a>
+                                    <input type="checkbox" name="happy" value="yes">
+                                    <span>Я подтверждаю своё совершеннолетие
+                                        и соглашаюсь с <a href="">правилами сайта</a></span> 
                                   </label>
                                 </div>
                             </div>
@@ -119,6 +139,45 @@
             </div>
         </div>
     </section>
+    <div class="sec_policy">
+        <div class="close"></div>
+        <div class="sec3-wrapper">
+            <h1 class="header">ПОЛНЫЕ УСЛОВИЯ АКЦИИ</h1>
+            <div class="list-scroll">
+            <ol class="main-list">
+                <li class="main-item">СРОКИ ПРОВЕДЕНИЯ АКЦИИ
+                    <ol class="sec-list">
+                        <li>Общие сроки проведения акции с 01.07.2019 по 31.12.2019 включительно. </li>
+                    </ol> 
+                </li>
+                <li class="main-item">УЧАСТНИКИ АКЦИИ
+                    <ol class="sec-list">
+                        <li>Участниками Акции могут быть только пользователи, зарегистрированные на сайте <a href="https://mostbet.com/">mostbet.com</a>.</li>
+                    </ol> 
+                </li>
+                <li class="main-item">ПОРЯДОК ПРОВЕДЕНИЯ АКЦИИ
+                    <ol class="sec-list">
+                        <li>Для участия в акции Участникам совершить ставок не менее, чем на 1000 рублей в течение месяца, предшествующего месяцу, на который приходится день рождения Участника. </li>
+                        <li>В случае выполнения условий в п. 3.1. клиенту начисляется фрибет номиналом 500 руб. </li>
+                        <li>Параметры фрибета определяет организатор акции. </li>
+                        <li>Срок действия фрибетов – 14 календарных дней</li>
+                        <li>Фрибет начисляется в любой из календарный дней месяца, на которой приходится день рождения Участника. </li>
+                    </ol>
+                </li>
+                <li class="main-item">ДРУГИЕ ПОЛОЖЕНИЯ
+                    <ol class="sec-list">
+                        <li>В случае возникновения споров по поводу права участия, получения призов и данных условий участия, окончательное решение принимается организатором Акции. Такое решение является обязательным к выполнению и не подлежит обжалованию Участником или какой-либо третьей стороной. </li>
+                        <li>Решения организатора акции по всем вопросам, связанным с проведением Акции считаются окончательными и распространяются на всех участников Акции после публикации на сайте. </li>
+                        <li>Если организатор Акции обнаружит, что он стал жертвой мошенничества или отмывания денег, то он имеет право аннулировать право Участника на получение Приза. Любое нарушение настоящих правил ведёт к аннулированию участия, а также к принятию дополнительных мер, направленных на предотвращение подобных действий. </li>
+                        <li>Организатор имеет права запросить видеоидентификацию Участника Акции для подтверждения достоверности информации о дне рождения Участника, указанной в его профиле на сайте <a href="https://mostbet.com/">mostbet.com</a>. </li>
+                        <li>Правила настоящей Акции могут быть изменены и дополнены как в период ее проведения, так и в любое другое время.</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

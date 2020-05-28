@@ -3,7 +3,15 @@
   margin: 0;
 }
 
-input:focus {
+input :focus {
+  outline: 0;
+}
+
+input {
+  outline-style: none;
+}
+
+select:focus {
   outline: 0;
 }
 
@@ -23,6 +31,20 @@ body {
   background-size: 100vw 100%;
   min-height: 775px;
   overflow-x: hidden;
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #dde4ec;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #fa5a00;
+  border-radius: 30px;
 }
 
 .wrapper {
@@ -207,6 +229,7 @@ body {
 
 .sec2 {
   height: 775px;
+  display: none;
 }
 
 .sec2 .coins {
@@ -383,8 +406,55 @@ body {
   text-align: center;
 }
 
-.sec2 .wrapper .form-registration .form-wrap .form-tabs .phone-tap {
+.sec2 .wrapper .form-registration .form-wrap .form-tabs .tabitem {
   color: #6b7d8e;
+  cursor: pointer;
+  position: relative;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .form-tabs .tabitem:hover {
+  color: #167fe0;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .form-tabs .tabitem:hover::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  bottom: -15px;
+  border-radius: 50px;
+  background-color: #167fe0;
+  z-index: 9;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .form-tabs .tabitem.active {
+  color: #fa4d00;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .form-tabs .tabitem.active::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  bottom: -15px;
+  border-radius: 50px;
+  background-color: #fa4d00;
+  z-index: 10;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .tab-content {
+  display: none;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .tab-content.active {
+  display: block;
 }
 
 .sec2 .wrapper .form-registration .form-wrap .main-form .wrapper {
@@ -416,13 +486,61 @@ body {
           align-items: center;
 }
 
-.sec2 .wrapper .form-registration .form-wrap .main-form .order-form .form-input {
+.sec2 .wrapper .form-registration .form-wrap .main-form .order-form .input-icon {
+  position: relative;
   width: 100%;
   margin-bottom: 10px;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .main-form .order-form .input-icon .ico {
+  position: absolute;
+  opacity: 0.75;
+  left: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sec2 .wrapper .form-registration .form-wrap .main-form .order-form .input-icon select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .main-form .order-form .input-icon .select-arrow {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border: 2px solid #cbd4df;
+  right: 17px;
+  border-top: none;
+  border-right: none;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+}
+
+.sec2 .wrapper .form-registration .form-wrap .main-form .order-form .input-icon .form-input {
+  width: 100%;
   border: 2px solid #cbd4df;
   min-height: 40px;
-  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 20px;
+  padding-left: 40px;
+  padding-right: 20px;
+  height: 25px;
+  background: #e2e3e4;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #e2e3e4), color-stop(27%, #f3f5f8));
+  background: linear-gradient(180deg, #e2e3e4 5%, #f3f5f8 27%);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .main-form .order-form .input-icon .form-input:focus, .sec2 .wrapper .form-registration .form-wrap .main-form .order-form .input-icon .form-input:hover {
+  background: #fff;
+  border: 2px solid #fa4d00;
+  opacity: 0.75;
 }
 
 .sec2 .wrapper .form-registration .form-wrap .main-form .order-form .form-btn {
@@ -461,7 +579,6 @@ body {
   font-size: 12px;
   padding: 10px 0;
   font-weight: bold;
-  text-align: center;
 }
 
 .sec2 .wrapper .form-registration .form-wrap .age-submit .wrapper a {
@@ -503,5 +620,111 @@ body {
   background-color: #e8ecf1;
   border-radius: 50%;
   line-height: 33px;
+}
+
+.sec_policy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: #fff;
+  border-radius: 25px;
+  color: #000;
+}
+
+.sec_policy .sec3-wrapper {
+  padding: 60px 60px;
+}
+
+.sec_policy .sec3-wrapper .header {
+  font-size: 40px;
+  font-family: "Roboto";
+  color: #074990;
+  text-transform: uppercase;
+  line-height: 30px;
+  text-align: left;
+  font-weight: 500;
+  margin-left: 40px;
+  position: relative;
+}
+
+.sec_policy .sec3-wrapper .header::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: #fa4d00;
+  left: -36px;
+}
+
+.sec_policy .sec3-wrapper .list-scroll {
+  margin-top: 45px;
+  height: 450px;
+  overflow-y: auto;
+}
+
+.sec_policy .sec3-wrapper .list-scroll ol {
+  counter-reset: item;
+}
+
+.sec_policy .sec3-wrapper .list-scroll a:link {
+  color: #fa5a00;
+  text-decoration: none;
+}
+
+.sec_policy .sec3-wrapper .list-scroll li {
+  display: block;
+}
+
+.sec_policy .sec3-wrapper .list-scroll li:before {
+  content: counters(item, ".") ".";
+  counter-increment: item;
+}
+
+.sec_policy .sec3-wrapper .list-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sec_policy .sec3-wrapper .list-scroll::-webkit-scrollbar-track {
+  background: #dde4ec;
+}
+
+.sec_policy .sec3-wrapper .list-scroll::-webkit-scrollbar-thumb {
+  background: #fa5a00;
+  border-radius: 30px;
+}
+
+.sec_policy .sec3-wrapper .list-scroll .main-list {
+  padding-right: 50px;
+}
+
+.sec_policy .sec3-wrapper .list-scroll .main-list .main-item {
+  margin-bottom: 65px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.sec_policy .sec3-wrapper .list-scroll .main-list .main-item:before {
+  padding-right: 30px;
+}
+
+.sec_policy .sec3-wrapper .list-scroll .main-list .main-item .sec-list {
+  text-transform: initial;
+  font-weight: initial;
+  color: #6b7d8e;
+}
+
+.sec_policy .sec3-wrapper .list-scroll .main-list .main-item .sec-list li {
+  margin-top: 10px;
+  line-height: 30px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.sec_policy .sec3-wrapper .list-scroll .main-list .main-item .sec-list li:before {
+  padding-right: 17px;
 }
 /*# sourceMappingURL=style.css.map */
