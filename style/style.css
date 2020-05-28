@@ -352,22 +352,27 @@ body {
 }
 
 .sec2 .wrapper .form-registration .form-wrap .form-tabs {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .form-tabs .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-transform: uppercase;
   font-size: 12px;
+  width: 75%;
   font-weight: bold;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 15px;
-  position: relative;
 }
 
 .sec2 .wrapper .form-registration .form-wrap .form-tabs::after {
   content: "";
   position: absolute;
   height: 2px;
+  padding: 0;
   width: 341px;
   bottom: -15px;
   background-color: #e8ecf1;
@@ -382,8 +387,8 @@ body {
   color: #6b7d8e;
 }
 
-.sec2 .wrapper .form-registration .form-wrap .main-form {
-  margin-top: 36px;
+.sec2 .wrapper .form-registration .form-wrap .main-form .wrapper {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,7 +399,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 75%;
 }
 
 .sec2 .wrapper .form-registration .form-wrap .main-form .order-form {
@@ -448,11 +453,18 @@ body {
 
 .sec2 .wrapper .form-registration .form-wrap .age-submit {
   background-color: #dde4ec;
-  font-size: 12px;
-  padding: 10px 0;
+  margin-top: 10px;
 }
 
-.sec2 .wrapper .form-registration .form-wrap .age-submit a {
+.sec2 .wrapper .form-registration .form-wrap .age-submit .wrapper {
+  width: 75%;
+  font-size: 12px;
+  padding: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .age-submit .wrapper a {
   color: #2ea9ff;
 }
 
@@ -463,7 +475,11 @@ body {
   margin-top: 15px;
 }
 
-.sec2 .wrapper .form-registration .form-wrap .socia .social-list {
+.sec2 .wrapper .form-registration .form-wrap .socia .wrapper {
+  width: 75%;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .socia .wrapper .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,7 +488,16 @@ body {
   margin: 15px 0;
 }
 
-.sec2 .wrapper .form-registration .form-wrap .socia .social-list a {
+.sec2 .wrapper .form-registration .form-wrap .socia .wrapper .social-list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 33px;
   height: 33px;
   background-color: #e8ecf1;

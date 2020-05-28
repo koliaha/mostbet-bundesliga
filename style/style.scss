@@ -266,17 +266,21 @@ body {
                 flex-direction: column;
                 padding-top: 30px;
                 .form-tabs {
-                    display: flex;
-                    text-transform: uppercase;
-                    font-size: 12px;
+                    margin-bottom: 15px;
+                        position: relative;
+                    .wrapper{
+                        display: flex;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        width: 75%;
                     font-weight: bold;
                     justify-content: space-around;
-                    margin-bottom: 15px;
-                    position: relative;
+                    }
                     &::after {
                         content: "";
                         position: absolute;
                         height: 2px;
+                        padding: 0;
                         width: 341px;
                         bottom: -15px;
                         background-color: #e8ecf1;
@@ -290,11 +294,14 @@ body {
                     }
                 }
                 .main-form {
-                    margin-top: 36px;
+                    .wrapper{
+                        margin-top: 20px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    width: 100%;
+                    width: 75%;
+                    }
+                    
                     .order-form {
                         width: 100%;
                         display: flex;
@@ -326,22 +333,35 @@ body {
                 }
                 .age-submit{
                     background-color: #dde4ec;
-                    font-size: 12px;
-                    padding: 10px 0;
-                    a{
-                        color: #2ea9ff;
+                    margin-top: 10px;
+                    .wrapper{
+                        width: 75%;
+                        font-size: 12px;
+                        padding: 10px 0;
+                        font-weight: bold;
+                        text-align: center;
+                        a{
+                            color: #2ea9ff;
+                        }
                     }
+                    
                 }
                 .socia{
                     text-align: center;
                     font-weight: bold;
                     font-size: 16px;
                     margin-top: 15px;
+                    .wrapper{
+                        width: 75%;
+                    
                     .social-list{
                         display: flex;
                         justify-content: space-around;
                         margin: 15px 0;
                         a{
+                            display: flex;
+                            justify-content: center;
+                            align-items:center;
                             width: 33px;
                             height: 33px;
                             background-color: #e8ecf1;
@@ -349,6 +369,7 @@ body {
                             line-height: 33px;
                         }
                     }
+                }
                 }
             }
         }
