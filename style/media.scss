@@ -34,7 +34,7 @@
         /* max-width: 1000px; */
     }
     .sec2 .wrapper .head-title{
-        font-size: 50px;
+        font-size: 55px;
     }
     .sec2 .wrapper .flag::before {
         left: calc(-25% - 20px);
@@ -43,7 +43,6 @@
         display: flex;
         flex-direction: column;
         align-items:center;
-        margin-top: 50px;
 
     }
     .sec2 .wrapper .main-content-list:after{
@@ -60,14 +59,21 @@
         border-radius:25px;
        /*  bottom: -100%; */
         right: 50%;
-        transform: translate(50%, -50%);
+        transform: translate(50%, -35%);
+    }
+    .sec2 .wrapper .form-registration .form-wrap .form-tabs::after{
+        width: 100%;
+    }
+    .darkscreen{
+        top:50%;
+        background-color: rgba(255,255,255,0);
     }
 }
 
 @media (max-width: 770px){
     body{
         background-image: url('../img/bg_mb.png');
-        background-size:auto 100%  ;
+        background-size: 100% 100% ;
         background-position:center center;
     }
     .sec1 .content .main-content .left-side,
@@ -163,10 +169,7 @@
     .sec_policy .sec3-wrapper .header{
         font-size: 18px;
     }
-    .darkscreen{
-        top:50%;
-        background-color: rgba(255,255,255,0);
-    }
+    
 }
 @media (max-width: 345px){
     .sec2 .wrapper .head-title {
@@ -194,6 +197,52 @@
         font-size: 17px;
     }
     .sec2 .wrapper .form-registration .form-wrap .form-tabs .wrapper{
+        font-size: 10px;
+    }
+}
+@media (max-height: 415px){
+    .sec1{
+        display: none;
+    }
+    .sec2{
+        display: block;
+    }
+    body{
+        background-image: url('../img/bg.png')
+    }
+    .sec2 .wrapper .content{
+        margin-top: 0;
+    }
+    .sec2 .wrapper .head-title{
+        line-height: 55px;
+    }
+    .sec2 .wrapper .flag{
+        margin-top: 20px;
+    }
+    .sec2 .wrapper .flag::before {
+        left: calc(-5% - 20px);
+    }
+    .sec2 .wrapper .head-subtitle{
+        font-size: 27px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .sec2 .wrapper .main-content-list{
+        margin-top: 25px;
+    }
+    .sec2 .wrapper .main-content-list .main-content-item{
+        margin-top: 0px;
+    }
+    .sec2 .wrapper .main-content-list .main-content-item .main-content-text {
+        font-size: 25px;
+    }
+    .sec2 .wrapper .main-content-list .main-content-item img{
+        width: 50px;
+    }
+    .sec2 .wrapper .form-registration .form-wrap .form-tabs::after{
+        width: 100%;
+    }
+    .sec2 .wrapper .form-registration .form-wrap .age-submit .wrapper{
         font-size: 10px;
     }
 }
