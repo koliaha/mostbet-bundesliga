@@ -54,20 +54,22 @@ body {
       }
 }
 
-.wrapper {
-    display: block;
-    width: 100%;
-    max-width: 840px;
-    margin: 0 auto;
-}
+
 .sec1 {
     min-height: 775px;
 
     .coins {
-        background-image: url("../img/bgcoins1.png");
+        background-image: url("../img/bgcoins1full.png"), url('../img/bgflagfull.png');
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-position: center center;
+        background-size: auto 100% ;
         height: 775px;
+    }
+    .wrapper {
+        display: block;
+        width: 100%;
+        max-width: 840px;
+        margin: 0 auto;
     }
     .content {
         padding-top: 20px;
@@ -180,9 +182,10 @@ body {
     height: 775px;
     display: none;
     .coins {
-        background-image: url("../img/bgcoins2.png");
+        background-image: url("../img/bgcoins2full.png"), url('../img/elements1.png');
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size:  auto 1100px;
+        background-position:center center;
         height: 775px;
     }
     .wrapper {
@@ -226,6 +229,7 @@ body {
             display: flex;
             flex-direction: column;
             margin-top: 60px;
+            position: relative;
             .main-content-item {
                 display: flex;
                 align-items: center;
@@ -248,11 +252,22 @@ body {
                     }
                 }
             }
+            &:after{
+                content:url('../img/cup.png');
+                position: absolute;
+                bottom:-50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 6;  
+            }
         }
         .league-logo {
             position: absolute;
+            background-color:#1667c1;
+            transform:   skew(-15deg);
             padding: 26px 20px 26px 60px;
             bottom: 0;
+            display: inline-block;
             .bundes {
                 text-transform: uppercase;
                 font-size: 30px;
@@ -260,6 +275,8 @@ body {
                 letter-spacing: 2px;
                 font-weight: 900;
                 position: relative;
+                display: block;
+                transform:   skew(15deg);
                 &::before {
                     content: url("../img/bunlogo.svg");
                     position: absolute;
@@ -392,6 +409,7 @@ body {
                                 top: 50%;
                                 transform: translateY(-50%) rotate(-45deg);
                             }
+                            
                             .form-input {
                                 width: 100%;
                                 border: 2px solid #cbd4df;
@@ -413,6 +431,26 @@ body {
                                     background: #fff;
                                     border: 2px solid #fa4d00;
                                     opacity: 0.75;
+                                }
+                                &.phone{
+                                    padding: 0;
+                                    padding-left: 10px;
+                                    border-radius:0px;
+                                    border-left: none;
+                                    border-top-right-radius:20px;
+                                    border-bottom-right-radius:20px;
+                                }
+                            }
+                            .phone-wrap {
+                                display: flex;
+                                select{
+                                    padding: 0;
+                                    padding-left: 20px;
+                                    width: 40%;
+                                    border-radius:0px;
+                                    border-right: none;
+                                    border-top-left-radius:20px;
+                                    border-bottom-left-radius:20px;
                                 }
                             }
                         }
@@ -466,10 +504,32 @@ body {
                                 background-color: #e8ecf1;
                                 border-radius: 50%;
                                 line-height: 33px;
+                                transition: 0.8s;
+                                &:hover{
+                                    background-color: #ffba00;
+                                }
                             }
                         }
                     }
                 }
+            }
+            &:before{
+                content:url('../img/ball2.png');
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                top: 120px;
+                left: -50%;
+                z-index: 6;
+            }
+            &::after{
+                content:url('../img/baks.png');
+                position: absolute;
+                width: 220px;
+                height: 185px;
+                bottom: 35px;
+                right: -50%;
+                z-index: 6;
             }
         }
     }
@@ -584,3 +644,33 @@ body {
         }
     }
 }
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar {
+    width: 5px !important;
+  }
+  
+  .select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-track {
+    background: #dde4ec !important;
+  }
+  
+  .select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-thumb {
+    background: #fa5a00 !important;
+    border-radius: 30px !important;
+  }
+  .select2-selection__rendered{
+      display: none !important;
+  }
+  .select2.select2-container.select2-container--default{
+    width: 0 !important;
+  }
+ select::-webkit-scrollbar {
+    width: 5px !important;
+  }
+  
+  select::-webkit-scrollbar-track {
+    background: #dde4ec !important;
+  }
+  
+  select::-webkit-scrollbar-thumb {
+    background: #fa5a00 !important;
+    border-radius: 30px !important;
+  }

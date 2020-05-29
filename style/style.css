@@ -47,22 +47,23 @@ body::-webkit-scrollbar-thumb {
   border-radius: 30px;
 }
 
-.wrapper {
-  display: block;
-  width: 100%;
-  max-width: 840px;
-  margin: 0 auto;
-}
-
 .sec1 {
   min-height: 775px;
 }
 
 .sec1 .coins {
-  background-image: url("../img/bgcoins1.png");
+  background-image: url("../img/bgcoins1full.png"), url("../img/bgflagfull.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-position: center center;
+  background-size: auto 100%;
   height: 775px;
+}
+
+.sec1 .wrapper {
+  display: block;
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
 }
 
 .sec1 .content {
@@ -233,9 +234,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sec2 .coins {
-  background-image: url("../img/bgcoins2.png");
+  background-image: url("../img/bgcoins2full.png"), url("../img/elements1.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: auto 1100px;
+  background-position: center center;
   height: 775px;
 }
 
@@ -295,6 +297,7 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 60px;
+  position: relative;
 }
 
 .sec2 .wrapper .main-content-list .main-content-item {
@@ -327,10 +330,24 @@ body::-webkit-scrollbar-thumb {
           transform: translateY(-50%);
 }
 
+.sec2 .wrapper .main-content-list:after {
+  content: url("../img/cup.png");
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 6;
+}
+
 .sec2 .wrapper .league-logo {
   position: absolute;
+  background-color: #1667c1;
+  -webkit-transform: skew(-15deg);
+          transform: skew(-15deg);
   padding: 26px 20px 26px 60px;
   bottom: 0;
+  display: inline-block;
 }
 
 .sec2 .wrapper .league-logo .bundes {
@@ -340,6 +357,9 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 2px;
   font-weight: 900;
   position: relative;
+  display: block;
+  -webkit-transform: skew(15deg);
+          transform: skew(15deg);
 }
 
 .sec2 .wrapper .league-logo .bundes::before {
@@ -542,6 +562,31 @@ body::-webkit-scrollbar-thumb {
   opacity: 0.75;
 }
 
+.sec2 .wrapper .form-registration .form-wrap .main-form .order-form .input-icon .form-input.phone {
+  padding: 0;
+  padding-left: 10px;
+  border-radius: 0px;
+  border-left: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .main-form .order-form .input-icon .phone-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .main-form .order-form .input-icon .phone-wrap select {
+  padding: 0;
+  padding-left: 20px;
+  width: 40%;
+  border-radius: 0px;
+  border-right: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
 .sec2 .wrapper .form-registration .form-wrap .main-form .order-form .form-btn {
   width: 100%;
   cursor: pointer;
@@ -619,6 +664,32 @@ body::-webkit-scrollbar-thumb {
   background-color: #e8ecf1;
   border-radius: 50%;
   line-height: 33px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.sec2 .wrapper .form-registration .form-wrap .socia .wrapper .social-list a:hover {
+  background-color: #ffba00;
+}
+
+.sec2 .wrapper .form-registration:before {
+  content: url("../img/ball2.png");
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 120px;
+  left: -50%;
+  z-index: 6;
+}
+
+.sec2 .wrapper .form-registration::after {
+  content: url("../img/baks.png");
+  position: absolute;
+  width: 220px;
+  height: 185px;
+  bottom: 35px;
+  right: -50%;
+  z-index: 6;
 }
 
 .darkscreen {
@@ -754,5 +825,39 @@ body::-webkit-scrollbar-thumb {
 .sec_policy .close:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-track {
+  background: #dde4ec !important;
+}
+
+.select2-container--default .select2-results > .select2-results__options::-webkit-scrollbar-thumb {
+  background: #fa5a00 !important;
+  border-radius: 30px !important;
+}
+
+.select2-selection__rendered {
+  display: none !important;
+}
+
+.select2.select2-container.select2-container--default {
+  width: 0 !important;
+}
+
+select::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+select::-webkit-scrollbar-track {
+  background: #dde4ec !important;
+}
+
+select::-webkit-scrollbar-thumb {
+  background: #fa5a00 !important;
+  border-radius: 30px !important;
 }
 /*# sourceMappingURL=style.css.map */
