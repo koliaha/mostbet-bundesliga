@@ -3,6 +3,26 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "RobotoBlackIT";
+  src: url("../fonts/robotoblackitalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/Roboto - Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoMed";
+  src: url("../fonts/Roboto - Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoMedIT";
+  src: url("../fonts/Roboto - Medium Italic.ttf") format("truetype");
+}
+
 input :focus {
   outline: 0;
 }
@@ -30,7 +50,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100vw 100%;
   min-height: 775px;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
 }
 
@@ -236,9 +256,9 @@ body::-webkit-scrollbar-thumb {
 .sec2 .coins {
   background-image: url("../img/bgcoins2full.png"), url("../img/elements1.png");
   background-repeat: no-repeat;
-  background-size: auto 1100px;
+  background-size: auto 100%;
   background-position: center center;
-  height: 775px;
+  height: 100vh;
 }
 
 .sec2 .wrapper {
