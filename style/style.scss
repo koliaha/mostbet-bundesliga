@@ -2,22 +2,9 @@
     padding: 0;
     margin: 0;
 }
-@font-face {
-    font-family: "RobotoBlackIT";
-    src: url("../fonts/robotoblackitalic.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "RobotoBold";
-    src: url("../fonts/Roboto\ -\ Bold.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "RobotoMed";
-    src: url("../fonts/Roboto\ -\ Medium.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "RobotoMedIT";
-    src: url("../fonts/Roboto\ -\ Medium\ Italic.ttf") format("truetype");
-  }
+
+
+  
 input :focus {
     outline: 0;
 }
@@ -49,14 +36,13 @@ body {
     background-color: #1667c1;
     color: #fff;
     font-size: 18px;
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     line-height: 1.2;
     background-image: url("../img/bg.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100vw 100%;
     min-height: 775px;
-    overflow: hidden;
     position: relative;
     &::-webkit-scrollbar {
         width: 5px;
@@ -99,6 +85,7 @@ body {
             margin: 60px 0 5px;
             font-size: 64px;
             text-transform: uppercase;
+            font-family: 'Roboto';
             font-weight: 900;
             transform: skew(-10deg);
         }
@@ -231,6 +218,7 @@ body {
             margin: 60px 0 5px;
             font-size: 64px;
             text-transform: uppercase;
+            font-family: 'Roboto';
             font-weight: 900;
             transform: skew(-10deg);
             line-height: 64px;
@@ -556,7 +544,6 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color:rgba(0, 0, 0, 0.6) ;
     z-index: 20;
 }
 .sec_policy {
