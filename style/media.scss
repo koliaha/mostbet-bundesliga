@@ -66,7 +66,9 @@
     }
     .darkscreen{
         top:50%;
-        background-color: rgba(255,255,255,0);
+    }
+    .sec_policy .sec3-wrapper .header{
+        font-size: 36px;
     }
 }
 
@@ -199,6 +201,18 @@
     .sec2 .wrapper .form-registration .form-wrap .form-tabs .wrapper{
         font-size: 10px;
     }
+    .sec2 .wrapper .form-registration:before{
+        left: -60%;
+    }
+    .sec2 .wrapper .main-content-list:after {
+        left: -30%;
+    }
+    .sec2 .wrapper .form-registration .form-wrap .socia {
+        font-size: 14px;
+    }
+    .sec2 .wrapper .form-registration .form-wrap .age-submit .wrapper {
+        font-size: 11px;
+    }
 }
 @media (max-height: 415px){
     .sec1{
@@ -220,7 +234,10 @@
         margin-top: 20px;
     }
     .sec2 .wrapper .flag::before {
-        left: calc(-5% - 20px);
+        left: calc(-10% - 20px);
+    }
+    .sec2 .wrapper .form-registration:before{
+        left: -85%;
     }
     .sec2 .wrapper .head-subtitle{
         font-size: 27px;
@@ -245,4 +262,24 @@
     .sec2 .wrapper .form-registration .form-wrap .age-submit .wrapper{
         font-size: 10px;
     }
+    .sec2 .wrapper .form-registration .form-wrap .form-tabs .wrapper{
+        font-size: 10px;
+    }
+    .sec2 .wrapper .head-title {
+        font-size: 55px;
+    }
+}
+@media (max-height: 375px){
+    .sec2 .wrapper .flag::before {
+        left: calc(-12% - 20px);
+    }
+    .sec2 .wrapper .head-title {
+        font-size: 54px;
+    }
+}
+@media (max-height: 320px){
+    .sec2 .wrapper .flag::before {
+        left: calc(-25% - 20px);
+    }
+   
 }
