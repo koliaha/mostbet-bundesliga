@@ -5,7 +5,7 @@
     .sec1 {
         position: absolute;
         width: 100%;
-        top:20%;
+        top:0;
         left:50%;
         transform: translateX(-50%);
     }
@@ -17,14 +17,33 @@
         background-size:cover;
     }
 }
+@media (width: 1366px) and (height:1024px){
+ 
+    .sec1 {
+        position: absolute;
+        width: 100%;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+}
+@media (width: 1024px) and (height:1366px){
+ 
+    .sec1 {
+        position: absolute;
+        width: 100%;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,50%);
+    }
+
+}
 @media (max-width: 1025px){
     body{
         min-height: auto;
     }
-    .sec1{
-       margin-top: 15%;
-
-    }
+    
     .sec2 .coins{
         height: 1300px;
         background-image: url('../img/mb_elem.png')
@@ -71,7 +90,11 @@
         font-size: 36px;
     }
 }
-
+@media (max-width: 830px){
+    .sec1 .content .head-title {
+        font-size: 56px;
+    }
+}
 @media (max-width: 770px){
     body{
         background-image: url('../img/bg_mb.png');
@@ -88,7 +111,7 @@
         transform: none;
     }
 }
-@media (max-width: 415px){
+@media (max-width: 650px){
    .sec1{
        display: none;
    }
@@ -142,10 +165,9 @@
    }
    .sec2 .wrapper .main-content-list{
        flex-direction: column;
-       align-items:center;
    }
    .sec2 .wrapper .main-content-list .main-content-item{
-       justify-content: space-between;
+       justify-content: center;
    }
    .sec2 .wrapper .main-content-list .main-content-item .main-content-text {
     font-size: 26px;
