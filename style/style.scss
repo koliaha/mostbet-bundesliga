@@ -289,6 +289,14 @@ body {
                     transform: translateY(-50%);
                 }
             }
+            &::before{
+                content: url("../img/ball.png");
+                    position: absolute;
+                    left: -135px;
+                    top: -50%;
+                    transform: translateY(-50%);
+                    transform:   skew(15deg);
+            }
         }
         .form-registration {
             max-width: 341px;

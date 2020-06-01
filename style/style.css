@@ -372,6 +372,17 @@ body::-webkit-scrollbar-thumb {
           transform: translateY(-50%);
 }
 
+.sec2 .wrapper .league-logo::before {
+  content: url("../img/ball.png");
+  position: absolute;
+  left: -135px;
+  top: -50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform: skew(15deg);
+          transform: skew(15deg);
+}
+
 .sec2 .wrapper .form-registration {
   max-width: 341px;
   position: absolute;

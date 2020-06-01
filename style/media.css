@@ -105,6 +105,11 @@
   .sec2 {
     display: block;
   }
+  .sec2 .coins {
+    background-image: url("../img/mb_elem.png");
+    background-size: 100% auto;
+    background-position: top;
+  }
   .sec2 .wrapper .form-registration {
     position: relative;
     right: 0;
